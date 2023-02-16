@@ -65,7 +65,7 @@ export default {
                 lat = position.coords.latitude
                 long = position.coords.longitude
 
-                axios.get(`http://api.weatherapi.com/v1/current.json?key=12d64dc31f794d6aaca170154231502&q=${lat},${long}`)
+                axios.get(`https://api.weatherapi.com/v1/current.json?key=12d64dc31f794d6aaca170154231502&q=${lat},${long}`)
                     .then((response) => {
                         console.log(response.data)
                         this.location = response.data.location
